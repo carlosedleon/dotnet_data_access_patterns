@@ -15,6 +15,8 @@ public class AppDbContext : DbContext
     {
         if (options.IsConfigured) return;
 
+        // Define the path to the SQLite database file relative to the project directory
+        // DataAccessPatterns\src\orders.db
         var dbPath = Path.GetFullPath(
             Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "orders.db")
         );
