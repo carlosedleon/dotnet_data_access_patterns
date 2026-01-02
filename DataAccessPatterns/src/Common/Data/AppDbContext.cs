@@ -13,7 +13,13 @@ public class AppDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
-        options.UseSqlite("Data Source=orders.db");
+        if (options.IsConfigured) return;
+
+        var dbPath = Path.GetFullPath(
+            Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "orders.db")
+        );
+
+        options.UseSqlite($"Data Source={dbPath}");
         options.EnableSensitiveDataLogging();
         options.LogTo(Console.WriteLine);
     }

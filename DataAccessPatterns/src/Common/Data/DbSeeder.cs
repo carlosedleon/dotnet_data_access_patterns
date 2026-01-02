@@ -11,7 +11,7 @@ public static class DbSeeder
 
         var orders = new List<Order>();
 
-        for (int o = 0; o < 10; o++)
+        for (int o = 0; o < 40; o++)
         {
             var order = new Order
             {

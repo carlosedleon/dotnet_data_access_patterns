@@ -16,3 +16,5 @@
 /DataAccessPatterns/src/Ef.SplitQuery/obj/Debug
 /DataAccessPatterns/src/Ef.SplitQuery/obj
 /DataAccessPatterns/src/Db.Init/obj
+/DataAccessPatterns/src/Db.Init/bin
+DataAccessPatterns/src/orders.db
