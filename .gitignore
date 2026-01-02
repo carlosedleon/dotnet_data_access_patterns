@@ -1,0 +1,17 @@
+/.vs
+/DataAccessPatterns/.vs
+/DataAccessPatterns/src/Benchmarks/bin
+/DataAccessPatterns/src/Benchmarks/obj
+/DataAccessPatterns/src/Common/bin
+/DataAccessPatterns/src/Common/obj
+/DataAccessPatterns/src/Dapper.ReadModel/bin
+/DataAccessPatterns/src/Dapper.ReadModel/obj
+/DataAccessPatterns/src/Ef.Projection/bin
+/DataAccessPatterns/src/Ef.Projection/obj/Debug
+/DataAccessPatterns/src/Ef.Projection/obj
+/DataAccessPatterns/src/Ef.SingleQuery/bin
+/DataAccessPatterns/src/Ef.SingleQuery/obj/Debug
+/DataAccessPatterns/src/Ef.SingleQuery/obj
+/DataAccessPatterns/src/Ef.SplitQuery/bin/Debug
+/DataAccessPatterns/src/Ef.SplitQuery/obj/Debug
+/DataAccessPatterns/src/Ef.SplitQuery/obj

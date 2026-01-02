@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Benchmarks/Benchmarks.csproj" />
+    <Project Path="src/Common/Common.csproj" />
+    <Project Path="src/Dapper.ReadModel/Dapper.ReadModel.csproj" />
+    <Project Path="src/Ef.Projection/Ef.Projection.csproj" />
+    <Project Path="src/Ef.SingleQuery/Ef.SingleQuery.csproj" />
+    <Project Path="src/Ef.SplitQuery/Ef.SplitQuery.csproj" />
+  </Folder>
+</Solution>
