@@ -1,9 +1,19 @@
 ﻿using Common.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+
+Console.WriteLine("EF Core - SingleQuery Include");
 
 using var ctx = new AppDbContext();
-ctx.Database.EnsureDeleted();
-ctx.Database.EnsureCreated();
 
-DbSeeder.Seed(ctx);
+var sw = Stopwatch.StartNew();
 
-Console.WriteLine("Database seeded");
+var orders = ctx.Orders
+    .Include(o => o.Items)
+        .ThenInclude(i => i.Discounts)
+    .ToList();
+
+sw.Stop();
+
+Console.WriteLine($"Orders loaded: {orders.Count}");
+Console.WriteLine($"Elapsed: {sw.ElapsedMilliseconds} ms");
