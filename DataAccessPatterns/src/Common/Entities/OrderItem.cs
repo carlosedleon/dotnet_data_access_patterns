@@ -6,6 +6,7 @@ public class OrderItem
 
     public int OrderId { get; set; }
     public Order Order { get; set; } = null!;
+    public decimal Amount { get; set; }
 
     public List<OrderItemDiscount> Discounts { get; set; } = new();
 }
